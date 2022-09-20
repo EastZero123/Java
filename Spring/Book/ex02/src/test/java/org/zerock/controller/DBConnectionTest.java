@@ -1,19 +1,32 @@
 package org.zerock.controller;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
+
+import javax.inject.Inject;
+import javax.sql.DataSource;
+ 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = { "file:src/main/webapp/WEB-INF/spring/**/root-context.xml" })
 public class DBConnectionTest {
-	@Test
-	public void test() throws Exception {
-		Class.forName("org.mariadb.jdbc.Driver"); // 마리아DB
-		// Class.forName("com.mysql.jdbc.Driver"); MySQL
+    
+    @Inject
+    private DataSource ds;
+ 
+    @Test
+    public void testConnection(){
+    	
+        try (Connection con = ds.getConnection()) {
+ 
+            System.out.println("\nDB연결 성공 !!\n");
+ 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-		Connection con = DriverManager.getConnection("jdbc:mariadb://127.0.0.1:3306/study", "root", "1234");// 마리아DB
-		// Connection con =
-		// DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test","root","passwd");
-		// MySQL
-		System.out.println(con);
-	}
 }
