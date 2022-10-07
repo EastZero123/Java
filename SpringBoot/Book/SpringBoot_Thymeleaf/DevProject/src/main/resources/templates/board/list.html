@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Board</title>
+</head>
+<body>
+	<h3>LIST</h3>
+
+	<a href="register.html" th:href="@{register}">New</a>
+	<table border="1">
+		<tr>
+			<th align="center" width="80">NO</th>
+			<th align="center" width="320">TITLE</th>
+			<th align="center" width="100">WRITER</th>
+			<th align="center" width="180">REGDATE</th>
+		</tr>
+
+		<tr th:if="${#lists.isEmpty(list)}">
+			<td colspan="4">List is empty</td>
+		</tr>
+
+		<tr th:each="board : ${list}">
+			<td align="center" th:text="${board.boardNo}">${board.boardNo}</td>
+			<td align="left"><a href="read.html"
+				th:href="@{|read?boardNo=${board.boardNo}|}"
+				th:text="${board.title}">${board.title}</a></td>
+			<td align="right" th:text="%{board.writer}">${board.writer}</td>
+			<td align="center"
+				th:text="${#temporals.format(board.regDate,'yyyy-MM-dd HH:mm:ss')}">${board.regDate}</td>
+		</tr>
+
+	</table>
+
+	<script th:inline="javascript">
+	var result = [[${msg}]]
+	if(result) {
+		alert(result)
+	}
+	</script>
+
+</body>
+</html>
