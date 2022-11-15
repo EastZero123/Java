@@ -21,4 +21,14 @@ INSERT INTO tbl_member (mid, mpw, mname) VALUES ('user02', '1111','사용자2');
 
 ALTER TABLE tbl_member ADD COLUMN UUID VARCHAR(50);
 
+DROP TABLE tbl_todo;
+
+CREATE TABLE tbl_todo (
+tno INT AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(100) NOT NULL,
+dueDate DATE NOT NULL,
+writer VARCHAR(50) NOT NULL,
+finished TINYINT DEFAULT 0
+);
+
 FLUSH PRIVILEGES;

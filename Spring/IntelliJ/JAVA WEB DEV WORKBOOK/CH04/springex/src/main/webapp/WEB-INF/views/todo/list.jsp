@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: CHOIDONGYOUNG
   Date: 2022-11-15
-  Time: 오전 10:06
+  Time: 오후 2:38
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -47,46 +47,58 @@
                         Featured
                     </div>
                     <div class="card-body">
-                        <form action="/todo/register" method="post">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">Title</span>
-                                <input type="text" name="title" class="form-control" placeholder="Title">
-                            </div>
-
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">DueDate</span>
-                                <input type="date" name="dueDate" class="form-control" placeholder="Date">
-                            </div>
-
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">Writer</span>
-                                <input type="text" name="writer" class="form-control" placeholder="Writer">
-                            </div>
-
-                            <div class="mb-4">
-                                <div class="float-end">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                    <button type="result" class="btn btn-secondary">Reset</button>
-                                </div>
-                            </div>
-                        </form>
-                        <script>
-                            const serverValidResult = {}
-
-                            <c:forEach items="${errors}" var="error">
-                            serverValidResult['${error.getField()}'] = '${error.defaultMessage}'
+                        <h5 class="card-title">Special title treatment</h5>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Tno</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Writer</th>
+                                <th scope="col">DueDate</th>
+                                <th scope="col">Finished</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <c:forEach items="${responseDTO.dtoList}" var="dto">
+                                <tr>
+                                    <th scope="row"><c:out value="${dto.tno}"/></th>
+                                    <td><a href="/todo/read?tno=${dto.tno}" class="text-decoration-none"> <c:out
+                                            value="${dto.title}"/></a></td>
+                                    <td><c:out value="${dto.writer}"/></td>
+                                    <td><c:out value="${dto.dueDate}"/></td>
+                                    <td><c:out value="${dto.finished}"/></td>
+                                </tr>
                             </c:forEach>
+                            </tbody>
+                        </table>
+                        <div class="float-end">
+                            <ul class="pagination flex-wrap">
+                                <c:if test="${responseDTO.prev}">
+                                    <li class="page-item">
+                                        <a class="page-link" data-num="${responseDTO.start -1}">Previous</a>
+                                    </li>
+                                </c:if>
+                                <:c:forEach begin="${responseDTO.start}" end="${responseDTO.end}" var="num">
+                                    <li class="page-item ${responseDTO.page == num ? "active":""}"><a class="page-link"
+                                                                                                      href="#">${num}</a>
+                                    </li>
+                                </:c:forEach>
 
-                            console.log(serverValidResult)
-                        </script>
+                                <c:if test="${responseDTO.next}">
+                                    <li class="page-item">
+                                        <a class="page-link">Next</a>
+                                    </li>
+                                </c:if>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <%--    <div class="row content">--%>
-    <%--        <h1>Content</h1>--%>
-    <%--    </div>--%>
+    <div class="row content">
+        <h1>Content</h1>
+    </div>
     <div class="row footer">
         <div class="row     fixed-bottom" style="z-index: -100">
             <footer class="py-1 my-1">
