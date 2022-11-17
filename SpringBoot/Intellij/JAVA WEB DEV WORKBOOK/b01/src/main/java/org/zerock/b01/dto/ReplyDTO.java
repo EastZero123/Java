@@ -11,6 +11,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
+
+
 @Data
 @Builder
 @AllArgsConstructor
@@ -28,10 +30,10 @@ public class ReplyDTO {
     @NotEmpty
     private String replyer;
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private LocalDateTime regDate;
 
     @JsonIgnore
     private LocalDateTime modDate;
+
 }

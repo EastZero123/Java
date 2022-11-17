@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class SampleJSONController {
 
     @GetMapping("/helloArr")
-    public String[] helloArr() {
+    public String[] helloArr(){
 
-        log.info("helloArr....");
+        log.info("helloArr..................");
 
-        return new String[]{"AAA", "BBB", "CCC"};
+        return new String[]{"AAA","BBB","CCC"};
     }
+
 }
