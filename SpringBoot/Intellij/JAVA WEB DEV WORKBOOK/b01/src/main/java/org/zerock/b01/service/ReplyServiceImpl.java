@@ -33,6 +33,8 @@ public class ReplyServiceImpl implements ReplyService {
 
         Long rno = replyRepository.save(reply).getRno();
 
+        log.info(rno);
+
         return rno;
     }
 
