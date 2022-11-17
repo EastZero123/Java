@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -14,23 +12,17 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class BoardDTO {
+public class BoardListAllDTO {
 
     private Long bno;
 
-    @NotEmpty
-    @Size(min = 3, max = 100)
     private String title;
 
-    @NotEmpty
-    private String content;
-
-    @NotEmpty
     private String writer;
 
     private LocalDateTime regDate;
 
-    private LocalDateTime modDate;
+    private Long replyCount;
 
-    private List<String> fileNames;
+    private List<BoardImageDTO> boardImage;
 }
