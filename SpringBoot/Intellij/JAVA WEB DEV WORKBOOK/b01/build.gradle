@@ -52,6 +52,11 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-security'
 
+    // https://mvnrepository.com/artifact/org.thymeleaf.extras/thymeleaf-extras-springsecurity5
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.7.4'
+
     annotationProcessor(
             "javax.persistence:javax.persistence-api",
             "javax.annotation:javax.annotation-api",
