@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo" />
+        <module name="00-spring-boot-rest-security-employee-starter-code" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="00-spring-boot-rest-security-employee-starter-code" options="-parameters" />
       <module name="cruddemo" options="-parameters" />
     </option>
   </component>
