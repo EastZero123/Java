@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b3ef5251-7509-4c00-837d-1c7fd32c5898" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/src/main/java/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/src/main/java/com/luv2code/springboot/thymeleafdemo/controller/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/src/main/resources/static/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/src/main/resources/templates/helloworld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07-spring-boot-spring-mvc/01-thymeleafdemo-helloworld/src/test/java/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql-scripts/employee-directory.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/thymeleafdemo/controller/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/thymeleafdemo/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/thymeleafdemo/dao/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/thymeleafdemo/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/thymeleafdemo/service/EmployeeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/employees/employee-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/employees/list-employees.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/helloworld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springboot/thymeleafdemo/controller/DemoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springboot/thymeleafdemo/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springboot/thymeleafdemo/dao/EmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springboot/thymeleafdemo/entity/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springboot/thymeleafdemo/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springboot/thymeleafdemo/service/EmployeeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/employees/employee-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/employees/list-employees.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/helloworld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/luv2code/springboot/thymeleafdemo/ThymeleafdemoApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ph4Upv5U5Tz3zXLxvVj6kmJRuV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/cdy10/OneDrive/바탕 화면/Java/SpringBoot3.0/08-spring-boot-spring-mvc-security/01-spring-boot-spring-mvc-security-default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cdy10\OneDrive\바탕 화면\Java\SpringBoot3.0\08-spring-boot-spring-mvc-crud\01-thymeleaf-demo-employees-starter-list\src\main\resources\templates\employees" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ThymeleafdemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luv2code.springboot.thymeleafdemo.ThymeleafdemoApplication" />
+      <module name="thymeleafdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luv2code.springboot.thymeleafdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThymeleafdemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3ef5251-7509-4c00-837d-1c7fd32c5898" name="Changes" comment="" />
+      <created>1683895997983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683895997983</updated>
+    </task>
+    <servers />
+  </component>
+</project>
